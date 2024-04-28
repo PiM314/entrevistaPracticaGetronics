@@ -1,0 +1,24 @@
+{
+  "name": "entrevistapracticadopazo",
+  "version": "1.0.0",
+  "description": "Casos de Prueba en tienda movistar",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "qa",
+    "automatizacion",
+    "tienda",
+    "movistar"
+  ],
+  "author": "Pilar Dopazo",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^13.8.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PiM314/entrevistaPracticaGetronics"
+  }
+}
