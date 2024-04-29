@@ -4,6 +4,8 @@ export default class DetalleCelularPage {
         this.calculaCuotasLink = '#open-installments-modal';
         this.selectorBanco = '#bankSelector';
         this.selectorTarjeta = '#cardSelector';
+        this.calcularCuotasButton = '#calculate_btn > .btn-primary';
+        this.tablaCuotas = '#installmentsTable';
     }
 
     // Acceso a los selectores
@@ -16,7 +18,7 @@ export default class DetalleCelularPage {
     }
 
     getSelectorBancoEspecifico(banco){
-        return cy.get(this.selectorBanco).click().contains(banco);
+        return cy.get(this.selectorBanco).click({force: true}).contains(banco);
     }
 
     getSelectorTarjetas(){
@@ -24,6 +26,14 @@ export default class DetalleCelularPage {
     }
 
     getSelectorTarjetaEspecifica(tarjeta){
-        return cy.get(this.selectorTarjeta).click().contains(tarjeta);
+        return cy.get(this.selectorTarjeta).click({force: true}).contains(tarjeta);
+    }
+
+    getCalcularCuotasButton(){
+        return cy.get(this.calcularCuotasButton);
+    }
+    getTablaCuotas(){
+        return cy.get(this.tablaCuotas);
     }
 }
+

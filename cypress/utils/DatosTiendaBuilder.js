@@ -5,8 +5,10 @@ export default class DatosTiendaBuilder {
         return this;
     }
 
-    equipoCP01(){
+    equipoCP001(){
 	    this.equipo = "Galaxy A14 4G";
 	    return this;
     }
+
+   
 }
